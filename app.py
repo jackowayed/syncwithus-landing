@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from mailchimp3 import MailChimp
 
@@ -25,6 +25,10 @@ app = create_app()
 def home():
     return render_template('home.html')
 
+@app.route('/subscribed')
+def subscribed():
+    return render_template('subscribed.html')
+
 @app.route('/subscribe', methods=['POST'])
 def subscribe():
     email = request.form['email']
@@ -32,4 +36,4 @@ def subscribe():
         'email_address': email,
         'status': 'subscribed'
     })
-    return "ok " + email
+    return redirect(url_for('subscribed'))
