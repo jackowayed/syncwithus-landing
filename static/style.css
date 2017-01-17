@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Circle';
+  src: url('/static/CircularStd-Book.otf')
+}
+
 body {
   color: #fa6c46;
+  font-family: 'Circle', Fallback, sans-serif;
 }
 input[type="text"] {
   color: #fa6c46;
