@@ -1,5 +1,10 @@
 {% extends "bootstrap/base.html" %}
 
+{% block styles %}
+{{ super() }}
+<link href="/static/style.css" rel="stylesheet">
+{% endblock %}
+
 {% block title%}#syncwithus!{% endblock %}
 
 {% block content %}
@@ -10,17 +15,16 @@
 
     <div class="row">
         <div class="col-md-6">
-            <h2>launching February 1, 2017</h2>
+            <div class="row">
+                Let's put our periods to work for Planned Parenthood. Get notified about our fundraising effort when we launch in February 2017.
+            </div>
             <form method="POST" action="/subscribe">
                 <div class="row">
                     <div class="col-md-4">
-                        <input type="text" placeholder="email" name="email"/>
+                        <input type="text" placeholder="Email address" name="email"/>
                     </div>
                     <div class="col-md-4">
-                        <input type="submit" value="Keep me in the loop" />
-                    </div>
-                    <div class="col-md-4">
-                        We will never share your email.
+                        <button type="submit" class="btn btn-primary">I'm in</button>
                     </div>
                 </div>
             </form>
