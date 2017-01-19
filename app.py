@@ -11,12 +11,12 @@ def create_app():
   return app
 
 def mailchimp_client():
-    user = os.environ.get('MAILCHIMP_USER')
-    secret = os.environ.get('MAILCHIMP_SECRET')
+    user = os.environ.get('MAILCHIMP_USER', 'no_user')
+    secret = os.environ.get('MAILCHIMP_SECRET', 'no-secret')
     enabled = os.environ.get('MAILCHIMP_ENABLE', 'false').lower()[0] == 't'
     return MailChimp(user, secret, enabled)
 
-MAILCHIMP_LIST = os.environ.get('MAILCHIMP_LIST')
+MAILCHIMP_LIST = os.environ.get('MAILCHIMP_LIST', 'nolist')
 MAILCHIMP = mailchimp_client()
 
 app = create_app()
