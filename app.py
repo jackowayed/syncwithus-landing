@@ -23,7 +23,7 @@ app = create_app()
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/subscribed')
 def subscribed():
