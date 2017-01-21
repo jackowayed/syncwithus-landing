@@ -1,0 +1,368 @@
+* {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	}
+
+@font-face {
+  font-family: Circular;
+  src: url('static/CircularStd-Book.otf')
+}
+
+body {
+  color: #fa6c46;
+  font-family: Circular, arial, sans-serif;
+}
+
+.container {
+	width: 900px;
+	padding: 110px 0 0 50px;
+	height: 650px;
+	margin: 0 auto 0 auto;
+/*	border: 1px solid #fafafb;*/
+	}
+
+.logo {
+	width: 100%;
+	height: 120px;
+/*	border: 1px solid #fafafb;*/
+}
+
+.calendar {
+	width: 470px;
+	height: 420px;
+/*	border: 1px solid #fafafb;*/
+	float: right;
+	margin: -90px 15px;
+}
+
+.content {
+	width: 440px;
+	height: 100px;
+/*	border: 1px solid #fafafb;*/
+	float: left;
+	}
+
+#logo {
+	width: 500px;
+	height: 100%;
+	}
+
+#calendar {
+	width: 100%;
+	height: auto;
+	}
+
+#text {
+	font-size: 20px;
+	padding: 35px 0 0 40px;
+	line-height: 34px;
+}
+
+#title2 {
+	visibility: hidden;
+}
+
+/* ABOUT =========================================================================== */
+
+.about {
+	width: 100%;
+	float:left;
+	padding: 230px 0 0 0;
+	margin: 0 0 0 0;
+	color: #28E3A7;
+}
+
+.about #title {
+	line-height: 34px;
+	width: 30%;
+	float: left;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.about .text {
+	float:right;
+	width: 50%;
+	display: inline-block;
+	font-size: 20px;
+	line-height: 34px;
+	margin: 0 0 -50% -200px;
+	bottom: 0;
+}
+
+.about .illustration {
+	float: left;
+	width: 50%;
+	height: auto;
+	position: absolute;
+	margin: -5% 0 0 -20%;
+}
+
+.about .illustration img {
+	width: 100%;
+	padding: 180px 0 0 0;
+	margin: 0 0 0 -30px;
+}
+
+.about #form {
+	margin: 10px 0 0 0;
+}
+
+/* FORM ELEMENTS =================================================================== */
+
+input[type="text"] {
+    color: #fa6c46;
+    width: 200px;
+    border: 1px solid #fa6c46;
+    height: 44px;
+    text-indent: 10px;
+    font-size: 15px;
+    padding: 2px;
+    float: left;
+	}
+
+input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ff7c76;
+	}
+
+input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+    color: #fa6c46;
+	}
+
+input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+    color: #fa6c46;
+	}
+
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+    color: #fa6c46;
+	}
+
+.button, .button:hover, .button:focus, .button:active, .button:active:focus {
+    padding: 17px 25px 29px 20px;
+    border-radius: 3px;
+    text-shadow: none;
+    box-shadow: none;
+    height: 25px;
+    border-style: solid;
+    float: left;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0 0 0 5px;
+    cursor: hand;
+    cursor: pointer;
+	}
+
+.button:hover {
+	background-color: #FF5824;
+    border-color: #FF5824;
+}
+
+.button, .button:focus, .button:active, .button:active:focus {
+	background-color: #fa6c46;
+    border-color: #fa6c46;
+}
+
+#form {
+    padding: 35px 0 0 0;
+    size: 20px !important;
+    float: top;
+	}
+
+input{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+
+/* MEDIA QUERIES =================================================================== */
+
+@media (max-width: 950px) {
+/*  tablet  body { background-color: red; } */
+
+}
+
+@media (max-width: 600px) {
+/*  Small devices { background-color: blue; } */
+
+	.content {
+		width: 80%;
+		height: auto;
+	/*	border: 1px solid #fafafb;*/
+		float: left;
+		margin: 5% 0 0 6%;
+		}
+
+	.container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		}
+
+	.logo {
+		width: 80%;
+		height: auto;
+	/*	border: 1px solid #fafafb;*/
+		margin: 10px 0 -5% 10%;
+		padding: 50px 0 0 0;
+		}
+
+	#logo {
+		width: 100%;
+		height: auto;
+		}
+
+	.calendar {
+	/*	border: 1px solid #fafafb;*/
+		width: 80%;
+		height: auto;
+		bottom: 0;
+		padding: 150px 0 0 6%;
+		}
+
+	.text {
+	}
+
+	#text {
+		font-size: 18px;
+		padding: 35px 0 0 40px;
+		line-height: 34px;
+		z-index: 0;
+	/*	border: 1px solid #fafafb;*/
+		}
+
+	#form {
+		width: 100%;
+		}
+
+}
+
+@media (max-width: 520px) {
+/*  Adjusting for form cut-off  */
+
+	input[type="text"] {
+	    color: #fa6c46;
+	    width: 98.6%;
+	    height: 44px;
+	    text-indent: 10px;
+	    font-size: 15px;
+	    padding: 2px;
+	    float: left;
+		}
+
+	.button, .button:hover, .button:focus, .button:active, .button:active:focus {
+	    padding: 20px 30px 30px 20px;
+	    margin: 5px 0 0 0;
+	    width: 100%;
+		}
+
+}
+
+@media (max-width: 400px) {
+/*  Adjusting for smallest chrome width  */
+
+	.button, .button:hover, .button:focus, .button:active, .button:active:focus {
+	    width: 100.6%;
+		}
+}
+
+@media (max-width: 335px) {
+/*  Adjusting for smallest firefox width  */
+	.content {
+			margin: 5% 0 0 3.5%;
+	}
+
+}
+
+@media (min-width: 1300px) {
+/*  larger screens */
+
+/*	body { background-color: #fafafb; }*/
+
+	.container {
+		width: 70%;
+		padding: 9.5% 0 0 3.5%;
+		height: 650px;
+		margin: 0 auto 0 auto;
+		}
+
+	.logo {
+		width: 57%;
+		margin: -2% 0 0 -1%;
+		height: auto;
+	/*	border: 1px solid #fafafb;*/
+	}
+
+	.calendar {
+		width: 53%;
+		height: auto;
+	/*	border: 1px solid #fafafb;*/
+		float: right;
+		margin: -7% 5%;
+	}
+
+	.content {
+		width: 50%;
+		height: 100px;
+	/*	border: 1px solid #fafafb;*/
+		float: left;
+		line-height: 10%;
+		}
+
+	#logo {
+		width: 100%;
+		height: auto;
+		}
+
+	#calendar {
+		width: 100%;
+		height: auto;
+		}
+
+	#text {
+		font-size: 1.6vw;
+		padding: 6% 0 0 10%;
+		line-height: 2.5vw;
+		}
+
+	#form {
+		line-height: 10%;
+		}
+
+	input[type="text"] {
+	    width: 40%;
+	    border-radius: 5px;
+	    font-size: 1.3vw;
+	    padding: 3%;
+	    height: 100%;
+		}
+
+	.button, .button:hover, .button:focus, .button:active, .button:active:focus {
+	    padding: 4% 5% 4% 3%;
+	    border-radius: 5px;
+	    text-shadow: none;
+	    box-shadow: none;
+	    height: 20%;
+	    text-transform: uppercase;
+	    line-height: 80%;
+	    font-size: 1.2vw;
+	    margin: 0 0 0 1%;
+		}
+
+	#form {
+	    padding: 10% 0 0 0;
+	    size: 20px !important;
+	    float: top;
+		}
+
+	.about .text {
+		font-size: 1.6vw;
+		line-height: 2.5vw;
+	}
+
+/*	.about {
+		border: 1px solid yellow;
+	}
+*/
+}
