@@ -27,7 +27,9 @@
 
             <form method="POST" action="/subscribe">
                 <div class="row" id="form">
-                    <input type="text" placeholder="Email address" name="email"/>
+                    <input required class="name-field" type="text" placeholder="First Name" name="fname"/>
+                    <input class="name-field" type="text" placeholder="Last Name" name="lname"/>
+                    <input required type="email" placeholder="Email address" name="email"/>
                     <button type="submit" class="button">&nbsp;I'm in</button>
                 </div>
             </form>

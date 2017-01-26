@@ -128,7 +128,11 @@ body {
 
 /* FORM ELEMENTS =================================================================== */
 
-input[type="text"] {
+input[type="text"], input[type="email"], .button, .button:hover, .button:focus, .button:active, .button:active:focus {
+	margin: 0 5px 5px 0;
+}
+
+input[type="text"], input[type="email"] {
     color: #fa6c46;
     width: 200px;
     border: 1px solid #fa6c46;
@@ -139,19 +143,19 @@ input[type="text"] {
     float: left;
 	}
 
-input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #ff7c76;
 	}
 
-input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder { /* Firefox 19+ */
     color: #fa6c46;
 	}
 
-input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder { /* IE 10+ */
     color: #fa6c46;
 	}
 
-input[type="text"]:-moz-placeholder { /* Firefox 18- */
+input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder { /* Firefox 18- */
     color: #fa6c46;
 	}
 
@@ -167,7 +171,6 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
     line-height: 12px;
     font-size: 15px;
     color: #ffffff;
-    margin: 0 0 0 5px;
     cursor: hand;
     cursor: pointer;
     z-index: 2;
@@ -189,9 +192,8 @@ input[type="text"]:-moz-placeholder { /* Firefox 18- */
 }
 
 #form {
-    padding: 35px 0 0 0;
+    padding: 10px 0 0 0;
     size: 20px !important;
-    float: top;
     z-index: 2;
     position: relative;
 	}
@@ -281,7 +283,7 @@ input{
 @media (max-width: 520px) {
 /*  Adjusting for form cut-off  */
 
-	input[type="text"] {
+	input[type="text"], input[type="email"] {
 	    color: #fa6c46;
 	    width: 98.6%;
 	    height: 44px;
@@ -289,18 +291,17 @@ input{
 	    font-size: 15px;
 	    padding: 2px;
 	    float: left;
-		}
+	}
 
 	.button, .button:hover, .button:focus, .button:active, .button:active:focus {
 	    padding: 20px 30px 30px 20px;
-	    margin: 5px 0 0 0;
 	    width: 100%;
-		}
+	}
 
 	.column2 {
 		width: 0%;
 		float: left;
-		}
+	}
 
 }
 
@@ -398,15 +399,20 @@ input{
 		line-height: 10%;
 		}
 
-	input[type="text"] {
-	    width: 40%;
+	input[type="text"], input[type="email"] {
 	    border-radius: 5px;
 	    font-size: 1.3vw;
 	    padding: 3%;
 	    height: 100%;
-		}
+	    width: 67.5%;
+	}
+
+	input[type="text"].name-field {
+	    width: 30%;
+	}
 
 	.button, .button:hover, .button:focus, .button:active, .button:active:focus {
+	    width: 74%;
 	    padding: 4% 5% 4% 3%;
 	    border-radius: 5px;
 	    text-shadow: none;
@@ -415,13 +421,10 @@ input{
 	    text-transform: uppercase;
 	    line-height: 80%;
 	    font-size: 1.2vw;
-	    margin: 0 0 0 1%;
 		}
 
 	#form {
-	    padding: 10% 0 0 0;
 	    size: 20px !important;
-	    float: top;
 		}
 
 	.about .text {
