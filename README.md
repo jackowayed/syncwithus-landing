@@ -22,6 +22,9 @@ Install dependencies
 ---
     pip install -r requirements.txt
 
+If you run into trouble on el capitan, try
+	`pip install --user -r requirements.txt`
+
 
 Run the server
 ---
