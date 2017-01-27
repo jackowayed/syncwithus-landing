@@ -1,7 +1,6 @@
 import os
 
 from flask import Flask, render_template, request, redirect, url_for
-from flask_bootstrap import Bootstrap
 from mailchimp3 import MailChimp
 
 
@@ -13,11 +12,11 @@ def mailchimp_client():
 
 MAILCHIMP_LIST = os.environ.get('MAILCHIMP_LIST', 'nolist')
 MAILCHIMP = mailchimp_client()
+STATIC_URL = "http://syncwithus.org/"
 
 
 def create_app():
     app = Flask(__name__)
-    Bootstrap(app)
     return app
 
 app = create_app()
@@ -54,6 +53,6 @@ def subscribe():
         })
     except Exception as err:
         print '\n======= ERROR ======\n', err
-        return redirect(url_for('home'))
+        return redirect(STATIC_URL)
 
-    return redirect(url_for('subscribed'))
+    return redirect(STATIC_URL + 'subscribed')
