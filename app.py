@@ -12,7 +12,7 @@ def mailchimp_client():
 
 MAILCHIMP_LIST = os.environ.get('MAILCHIMP_LIST', 'nolist')
 MAILCHIMP = mailchimp_client()
-STATIC_URL = "http://syncwithus.org/"
+STATIC_URL = "http://www.syncwithus.org/"
 
 
 def create_app():
