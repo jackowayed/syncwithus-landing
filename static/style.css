@@ -75,7 +75,17 @@ body {
 
 /* ABOUT =========================================================================== */
 
-.section2 {
+#about-page header {
+	box-shadow: 1px 1px 8px #888888;
+}
+
+#about-page header #logo {
+	width: 250px;
+	padding: 20px 30px;
+}
+
+
+section.about {
 	display: block;
 	float: left;
 	width: 100%;
@@ -84,14 +94,103 @@ body {
 	bottom: 0;
 }
 
+#about-page a{
+	color: inherit;
+	text-decoration: underline;
+}
+/*  larger screens show image on the side,
+	smaller screens show image below
+*/
+
+#about-page img.mobile-only{
+	width: 100%;
+}
+#about-page div.mobile-only {
+	float: inherit;
+	text-align: center;
+}
+#about-page div.mobile-only img{
+	width: 20%;
+}
+@media (min-width: 1300px) {
+
+	#about-page .mobile-only{
+		display: none;
+	}
+
+	#about-page section.about .about-general{
+		background-image: url('/static/img/swimmers-1.png');
+		background-repeat: no-repeat;
+		background-size: 450px;
+		background-position: -50px 100px;
+	}
+	#about-page section.about .people-set-1{
+		background-image: url('/static/img/spot-pink.png');
+		background-repeat: no-repeat;
+		background-size: 250px;
+		background-position-x: right;
+		background-position-y: 200px;
+	}
+	#about-page section.about .people-set-2{
+		background-image: url('/static/img/spot-orange.png');
+		background-repeat: no-repeat;
+		background-size: 350px;
+		background-position-x: -100px;
+		background-position-y: 200px;
+	}
+
+}
+
+#about-page section.about {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+#about-page section.about .text {
+	display: block;
+	margin: 0 auto;
+	padding: 4% 10%;
+	max-width: 800px;
+	text-align: left;
+}
+
+#about-page section.about h1 {
+	text-align: center;
+	padding: 25px;
+}
+
+#about-page .people {
+	float: inherit;
+	margin: auto;
+	width: 100%;
+}
+
+#about-page .team-member {
+	width: 40%;
+	float: left;
+	padding: 4%;
+}
+#about-page .team-member img{
+	height: 120px;
+	width: 120px;
+	float: left;
+	margin: 10px 25px 5px 0px;
+}
+.team-member p{
+	font-size: 1.1vw;
+	line-height: 2vw;
+}
+
+
 .column {
 	width: 55%;
-/*	border: 1px solid yellow;*/
 	float: right;
 }
 
 .illustrations {
-/*	position: absolute;*/
 	margin: -25% 0 0 0;
 	padding: 0 0 0 0;
 	float: left;
@@ -100,7 +199,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	background-size: 20%;
-/*	border: 1px solid yellow;*/
 }
 
 .swimmers img {
@@ -193,7 +291,7 @@ input{
 	border-radius: 3px;
 	}
 
-.section2 a {
+section.about a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -255,7 +353,7 @@ input{
 		float: left;
 		padding: 20px;
 		}
-	.section2 a {
+	section.about a {
 		color: inherit;
 		text-decoration: underline;
 	}
@@ -268,6 +366,12 @@ input{
 	.illustrations img {
 		width: 100%;
 	}
+
+	.team-member p{
+		font-size: 13px;
+		line-height: 15px;
+	}
+
 
 }
 
@@ -324,7 +428,7 @@ input{
 		margin: 20% 0 0 0;
 	}
 
-	.section2 {
+	section.about {
 		width: 100%;
 	}
 

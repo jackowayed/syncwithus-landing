@@ -1,9 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>#syncwithus</title>
+    <title>#SyncWithUs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#SyncWithUs is a grassroots effort to protect reproductive rights across the United States. We are a team of organizers, illustrators, designers, and engineers from coast to coast. Join us in fighting to keep Planned Parenthood thriving.">
+    <meta name="keywords" content="Women, Planned Parenthood, Health, Reproductive Rights, Periods">
 
     <link href="/static/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/ico" href="/static/img/favicon.png" />
@@ -12,44 +13,42 @@
 <body><a name="top"></a>
 
 <div class="container">
-<div class="section1">
-    <div class="logo">
-        <img src="static/img/logo_marks.png" id="logo">
-    </div>
+    <div class="section1">
+        <div class="logo">
+            <img src="static/img/logo_marks.png" id="logo">
+        </div>
 
-    <div class="content">
+        <div class="content">
 
-        <div class="text">
-            <p>Starting February 2017, let's put our periods to work for Planned Parenthood.</p>
-            <br>
-            <p>Stay in sync with us:</p>
+            <div class="text">
+                <p>Starting February 2017, let's put our periods to work for Planned Parenthood.</p>
+                <br>
+                <p>Stay in sync with us:</p>
 
 
-            <form method="POST" action="https://syncwithus-landing.herokuapp.com/subscribe">
-                <div class="row" id="form">
-                    <input required class="name-field" type="text" placeholder="First Name" name="fname"/>
-                    <input class="name-field" type="text" placeholder="Last Name" name="lname"/>
-                    <input required type="email" placeholder="Email address" name="email"/>
-                    <button type="submit" class="button">&nbsp;I'm in</button>
-                </div>
-            </form>
+                <form method="POST" action="https://syncwithus-landing.herokuapp.com/subscribe">
+                    <div class="row" id="form">
+                        <input required class="name-field" type="text" placeholder="First Name" name="fname"/>
+                        <input class="name-field" type="text" placeholder="Last Name" name="lname"/>
+                        <input required type="email" placeholder="Email address" name="email"/>
+                        <button type="submit" class="button">&nbsp;I'm in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
+        <div class="calendar">
+            <img src="static/img/calendar.png" id="calendar">
         </div>
 
     </div>
 
-    <div class="calendar">
-        <img src="static/img/calendar.png" id="calendar">
-    </div>
 
-</div>
-
-
-<div class="section2">
+    <section class="about">
 
         <div class="column">
 
-            <div class="about text">
+            <div class="text">
                 <p id="title">About</p>
                 <br>
                 <p>#SyncWithUs is a grassroots effort to protect reproductive rights across the United States. We are a team of organizers, illustrators, designers, and engineers from coast to coast. Join us in fighting to keep Planned Parenthood thriving.</p>
@@ -60,12 +59,12 @@
 
         </div>
 
-</div>
+    </section>
 </div>
 
 <div class="illustrations">
     <div class="swimmers">
-            <img src="static/img/aboutillustration.png">
+        <img src="static/img/aboutillustration.png">
     </div>
 </div>
 
