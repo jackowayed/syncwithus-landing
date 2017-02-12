@@ -162,6 +162,10 @@ section.about {
 	padding: 25px;
 }
 
+#about-page section.about #about-general h1 {
+	padding-bottom: 0;
+}
+
 #about-page .people {
 	float: inherit;
 	margin: auto;
@@ -212,6 +216,19 @@ section.about {
 	text-transform: uppercase;
 	font-family: Circular Bold;
 }
+.red {
+  color: #fa6c46;
+}
+
+#about-page .question {
+    font-size: 18px;
+    color: #fa6c46;
+}
+#about-page .text .answer {
+    font-size: 16px;
+    line-height: 28px;
+}
+
 
 /* FORM ELEMENTS =================================================================== */
 
